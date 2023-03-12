@@ -44,7 +44,6 @@
             this.miDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.mmAPropos = new System.Windows.Forms.ToolStripMenuItem();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
-            this.allerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,8 +164,6 @@
             // 
             // mmAPropos
             // 
-            this.mmAPropos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.allerToolStripMenuItem});
             this.mmAPropos.Name = "mmAPropos";
             this.mmAPropos.Size = new System.Drawing.Size(67, 20);
             this.mmAPropos.Text = "A Propos";
@@ -174,13 +171,6 @@
             // customInstaller1
             // 
             this.customInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.customInstaller1_AfterInstall);
-            // 
-            // allerToolStripMenuItem
-            // 
-            this.allerToolStripMenuItem.Name = "allerToolStripMenuItem";
-            this.allerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.allerToolStripMenuItem.Text = "aller";
-            this.allerToolStripMenuItem.Click += new System.EventHandler(this.allerToolStripMenuItem_Click);
             // 
             // FormAccueil
             // 
@@ -217,7 +207,6 @@
         private System.Windows.Forms.ToolStripMenuItem miDetails;
         private System.Windows.Forms.ToolStripMenuItem mmAPropos;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
-        private System.Windows.Forms.ToolStripMenuItem allerToolStripMenuItem;
     }
 }
 

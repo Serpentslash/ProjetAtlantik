@@ -156,12 +156,6 @@
     <Compile Include="FormModifierParametreSite.Designer.cs">
       <DependentUpon>FormModifierParametreSite.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTest.Designer.cs">
-      <DependentUpon>FormTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAfficherDetails.resx">
@@ -196,9 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormModifierParametreSite.resx">
       <DependentUpon>FormModifierParametreSite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTest.resx">
-      <DependentUpon>FormTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

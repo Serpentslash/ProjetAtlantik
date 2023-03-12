@@ -82,11 +82,5 @@ namespace WindowsForm
             FormAfficherDetails formNouvelle = new FormAfficherDetails();
             formNouvelle.ShowDialog();
         }
-
-        private void allerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormTest formNouvelle = new FormTest();
-            formNouvelle.ShowDialog();
-        }
     }
 }
