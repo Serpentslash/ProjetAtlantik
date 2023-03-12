@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED4DF4EB-BFAA-4B32-98FD-570E4ACE43AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsForm</RootNamespace>
+    <AssemblyName>WindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassClient.cs" />
+    <Compile Include="FormAfficherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAfficherDetails.Designer.cs">
+      <DependentUpon>FormAfficherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAfficherTraversees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAfficherTraversees.Designer.cs">
+      <DependentUpon>FormAfficherTraversees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutSecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutSecteur.Designer.cs">
+      <DependentUpon>FormAjoutSecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutPort.Designer.cs">
+      <DependentUpon>FormAjoutPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutLiaison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutLiaison.Designer.cs">
+      <DependentUpon>FormAjoutLiaison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutTarifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutTarifs.Designer.cs">
+      <DependentUpon>FormAjoutTarifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutBateau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutBateau.Designer.cs">
+      <DependentUpon>FormAjoutBateau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjoutTraversee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjoutTraversee.Designer.cs">
+      <DependentUpon>FormAjoutTraversee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassBateau.cs" />
+    <Compile Include="FormModifierBateau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifierBateau.Designer.cs">
+      <DependentUpon>FormModifierBateau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPeriode.cs" />
+    <Compile Include="ClassLiaison.cs" />
+    <Compile Include="ClassPort.cs" />
+    <Compile Include="ClassSecteur.cs" />
+    <Compile Include="FormAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccueil.Designer.cs">
+      <DependentUpon>FormAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifierParametreSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifierParametreSite.Designer.cs">
+      <DependentUpon>FormModifierParametreSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAfficherDetails.resx">
+      <DependentUpon>FormAfficherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAfficherTraversees.resx">
+      <DependentUpon>FormAfficherTraversees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutBateau.resx">
+      <DependentUpon>FormAjoutBateau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutLiaison.resx">
+      <DependentUpon>FormAjoutLiaison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutPort.resx">
+      <DependentUpon>FormAjoutPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutSecteur.resx">
+      <DependentUpon>FormAjoutSecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutTarifs.resx">
+      <DependentUpon>FormAjoutTarifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjoutTraversee.resx">
+      <DependentUpon>FormAjoutTraversee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccueil.resx">
+      <DependentUpon>FormAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifierBateau.resx">
+      <DependentUpon>FormModifierBateau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifierParametreSite.resx">
+      <DependentUpon>FormModifierParametreSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AjoutLiaison.datasource" />
+    <None Include="Properties\DataSources\AjoutPort.datasource" />
+    <None Include="Properties\DataSources\AjoutSecteur.datasource" />
+    <None Include="Properties\DataSources\AjoutTarifs.datasource" />
+    <None Include="Properties\DataSources\FormAccueil.datasource" />
+    <None Include="Properties\DataSources\Liaison.datasource" />
+    <None Include="Properties\DataSources\Periode.datasource" />
+    <None Include="Properties\DataSources\Port.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Secteur.datasource" />
+    <None Include="Properties\DataSources\WindowsForm.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsForm.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
